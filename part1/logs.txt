@@ -1,0 +1,29 @@
+=== Останні 10 записів системного журналу ===
+Nov 07 15:22:46 ubuntu-server sudo[2538]: pam_unix(sudo:session): session opened for user root(uid=0) by liudmyla(uid=1000)
+Nov 07 15:22:46 ubuntu-server sudo[2538]: liudmyla : TTY=/dev/pts/0 ; PWD=/home/liudmyla/devops-sr4 ; USER=root ; COMMAND=/usr/bin/journalctl -n 10 --no-pager
+Nov 07 15:22:46 ubuntu-server sudo[2538]: pam_unix(sudo:session): session closed for user root
+Nov 07 15:23:38 ubuntu-server sudo[2551]: pam_unix(sudo:session): session opened for user root(uid=0) by liudmyla(uid=1000)
+Nov 07 15:23:38 ubuntu-server sudo[2551]: liudmyla : TTY=/dev/pts/0 ; PWD=/home/liudmyla/devops-sr4 ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh.service --since today --no-pager
+Nov 07 15:23:38 ubuntu-server sudo[2551]: pam_unix(sudo:session): session closed for user root
+Nov 07 15:25:05 ubuntu-server PackageKit[1766]: daemon quit
+Nov 07 15:25:05 ubuntu-server systemd[1]: packagekit.service: Deactivated successfully.
+Nov 07 15:25:14 ubuntu-server sudo[2566]: pam_unix(sudo:session): session opened for user root(uid=0) by liudmyla(uid=1000)
+Nov 07 15:25:14 ubuntu-server sudo[2566]: liudmyla : TTY=/dev/pts/0 ; PWD=/home/liudmyla/devops-sr4 ; USER=root ; COMMAND=/usr/bin/journalctl -n 10 --no-pager
+
+=== Записи сервісу sshd (ssh.service) за сьогодні ===
+Nov 07 14:37:07 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 07 14:37:08 ubuntu-server sshd[1126]: Server listening on 0.0.0.0 port 22.
+Nov 07 14:37:08 ubuntu-server sshd[1126]: Server listening on :: port 22.
+Nov 07 14:37:08 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot e8ca7168ab9d4853b41468e682180e11 --
+Nov 07 14:40:51 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 07 14:40:52 ubuntu-server sshd[1143]: Server listening on 0.0.0.0 port 22.
+Nov 07 14:40:52 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Nov 07 14:40:52 ubuntu-server sshd[1143]: Server listening on :: port 22.
+-- Boot 14c393aacc3a42529c70693b1e1054e4 --
+Nov 07 15:01:46 ubuntu-server systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 07 15:01:47 ubuntu-server sshd[1149]: Server listening on 0.0.0.0 port 22.
+Nov 07 15:01:47 ubuntu-server systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Nov 07 15:01:47 ubuntu-server sshd[1149]: Server listening on :: port 22.
+Nov 07 15:16:16 ubuntu-server sshd-session[1551]: Accepted password for liudmyla from 10.0.2.2 port 56881 ssh2
+Nov 07 15:16:16 ubuntu-server sshd-session[1551]: pam_unix(sshd:session): session opened for user liudmyla(uid=1000) by liudmyla(uid=0)
