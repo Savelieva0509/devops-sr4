@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-babenko"
+version = "0.1.0"
+description = "Навчальний пакет з функцією hello() (DevOps, самостійна робота №4)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Liudmyla Babenko" }]
+
+[project.scripts]
+hello-babenko = "hello_babenko.core:main"
