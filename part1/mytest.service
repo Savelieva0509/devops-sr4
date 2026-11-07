@@ -1,0 +1,12 @@
+[Unit]
+Description=MyTest - щохвилини пише рядок у /tmp/test.log
+
+[Service]
+Type=simple
+User=liudmyla
+WorkingDirectory=/opt/mytest
+ExecStart=/bin/bash mytest.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
